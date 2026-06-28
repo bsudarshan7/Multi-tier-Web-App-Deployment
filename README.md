@@ -1,6 +1,6 @@
 # Server Dashboard Web Application
 
-# Multi-tier Web App Deployment
+Multi-tier Web App Deployment
 
 ## Project Overview
 
