@@ -2,10 +2,10 @@ import pymysql
 
 
 connection = pymysql.connect(
-    host="database-1.cr6c88gmoapu.ap-south-1.rds.amazonaws.com",
-    user="admin",
-    password="sudarshan",
-    database="server_dashboard",
+   host="YOUR_RDS_ENDPOINT"
+user="YOUR_USERNAME"
+password="YOUR_PASSWORD"
+database="server_dashboard",
     port=3306,
     cursorclass=pymysql.cursors.DictCursor,
     autocommit=True
