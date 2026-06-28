@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Live Server Dashboard</h1>
+
+<div class="grid">
+
+<div class="card">
+<h2>Hostname</h2>
+<p>{{ hostname }}</p>
+</div>
+
+<div class="card">
+<h2>CPU Usage</h2>
+<p>{{ cpu }} %</p>
+</div>
+
+<div class="card">
+<h2>Memory Usage</h2>
+<p>{{ memory }} %</p>
+</div>
+
+<div class="card">
+<h2>Disk Usage</h2>
+<p>{{ disk }} %</p>
+</div>
+
+<div class="card">
+<h2>Operating System</h2>
+<p>{{ os_name }}</p>
+</div>
+
+<div class="card">
+<h2>OS Version</h2>
+<p>{{ os_version }}</p>
+</div>
+
+<div class="card">
+<h2>Processor</h2>
+<p>{{ processor }}</p>
+</div>
+
+<div class="card">
+<h2>Current Time</h2>
+<p>{{ current_time }}</p>
+</div>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Metrics History</h1>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+
+<th>Hostname</th>
+
+<th>CPU</th>
+
+<th>Memory</th>
+
+<th>Disk</th>
+
+<th>Created Time</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+{% for row in records %}
+
+<tr>
+
+<td>{{ row.id }}</td>
+
+<td>{{ row.hostname }}</td>
+
+<td>{{ row.cpu }} %</td>
+
+<td>{{ row.memory }} %</td>
+
+<td>{{ row.disk }} %</td>
+
+<td>{{ row.created_at }}</td>
+
+</tr>
+
+{% endfor %}
+
+</tbody>
+
+</table>
+
+{% endblock %}
